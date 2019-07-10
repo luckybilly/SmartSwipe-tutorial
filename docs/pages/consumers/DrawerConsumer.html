@@ -1,0 +1,755 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DrawerConsumer · Smart Swipe</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="齐翊">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SlidingConsumer.html" />
+    
+    
+    <link rel="prev" href="StretchConsumer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SwipeConsumer.html">
+            
+                <a href="../SwipeConsumer.html">
+            
+                    
+                    SwipeConsumer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="common_settings.html">
+            
+                <a href="common_settings.html">
+            
+                    
+                    公共属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="CustomerConsumer.md">
+            
+                <span>
+            
+                    
+                    自定义Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="SpaceConsumer.html">
+            
+                <a href="SpaceConsumer.html">
+            
+                    
+                    SpaceConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="StretchConsumer.html">
+            
+                <a href="StretchConsumer.html">
+            
+                    
+                    StretchConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="DrawerConsumer.html">
+            
+                <a href="DrawerConsumer.html">
+            
+                    
+                    DrawerConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="SlidingConsumer.html">
+            
+                <a href="SlidingConsumer.html">
+            
+                    
+                    SlidingConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="TranslucentSlidingConsumer.html">
+            
+                <a href="TranslucentSlidingConsumer.html">
+            
+                    
+                    TranslucentSlidingConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="ShuttersConsumer.html">
+            
+                <a href="ShuttersConsumer.html">
+            
+                    
+                    ShuttersConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="DoorConsumer.html">
+            
+                <a href="DoorConsumer.html">
+            
+                    
+                    DoorConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="StayConsumer.html">
+            
+                <a href="StayConsumer.html">
+            
+                    
+                    StayConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="BezierBackConsumer.html">
+            
+                <a href="BezierBackConsumer.html">
+            
+                    
+                    BezierBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="ActivitySlidingBackConsumer.html">
+            
+                <a href="ActivitySlidingBackConsumer.html">
+            
+                    
+                    ActivitySlidingBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="ActivityShuttersBackConsumer.html">
+            
+                <a href="ActivityShuttersBackConsumer.html">
+            
+                    
+                    ActivityShuttersBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="ActivityDoorBackConsumer.html">
+            
+                <a href="ActivityDoorBackConsumer.html">
+            
+                    
+                    ActivityDoorBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../SmartSwipeBack.html">
+            
+                <a href="../SmartSwipeBack.html">
+            
+                    
+                    全局侧滑返回
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../SmartSwipeRefresh.html">
+            
+                <a href="../SmartSwipeRefresh.html">
+            
+                    
+                    下拉刷新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../SwipeListener.html">
+            
+                <a href="../SwipeListener.html">
+            
+                    
+                    侧滑监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../SwipeDistanceCalculator.html">
+            
+                <a href="../SwipeDistanceCalculator.html">
+            
+                    
+                    侧滑距离计算器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../directions.html">
+            
+                <a href="../directions.html">
+            
+                    
+                    侧滑方向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../releaseMode.html">
+            
+                <a href="../releaseMode.html">
+            
+                    
+                    Release处理方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../SwipeConsumerExclusiveGroup.html">
+            
+                <a href="../SwipeConsumerExclusiveGroup.html">
+            
+                    
+                    互斥组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >DrawerConsumer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="drawerconsumer">DrawerConsumer</h2>
+<hr>
+<p>&#x62BD;&#x5C49;&#x6548;&#x679C;&#xFF0C;&#x62BD;&#x5C49;&#x663E;&#x793A;&#x5728;&#x88AB;&#x5305;&#x88F9;&#x7684;&#x63A7;&#x4EF6;&#x4E0A;&#x5C42;(&#x5373;&#x8986;&#x76D6;&#x5728;contentView&#x4E4B;&#x4E0A;&#x663E;&#x793A;)&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<div align="center"><img src="../../images/drawerConsumer.gif"><br><br></div>
+
+<h3 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;">&#x793A;&#x4F8B;&#x4EE3;&#x7801;</h3>
+<pre><code class="lang-java">SwipeConsumer consumer = SmartSwipe.wrap(view)
+    .addConsumer(<span class="hljs-keyword">new</span> DrawerConsumer())    <span class="hljs-comment">//&#x62BD;&#x5C49;&#x6548;&#x679C;</span>
+    .setHorizontalDrawerView(buttonsViewGroup) <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x6A2A;&#x5411;(&#x5DE6;&#x53F3;&#x4E24;&#x4FA7;)&#x7684;&#x62BD;&#x5C49;&#x4E3A;&#x540C;&#x4E00;&#x4E2A;view&#xFF08;&#x5E38;&#x89C1;&#x7684;&#x4FA7;&#x6ED1;&#x663E;&#x793A;&#x5220;&#x9664;&#x6309;&#x94AE;&#x7684;&#x529F;&#x80FD;&#xFF09;</span>
+    .setScrimColor(<span class="hljs-number">0x2F000000</span>) <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x906E;&#x7F69;&#x7684;&#x989C;&#x8272;</span>
+    .setShadowColor(<span class="hljs-number">0x80000000</span>)    <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x8FB9;&#x7F18;&#x7684;&#x9634;&#x5F71;&#x989C;&#x8272;</span>
+    ;
+</code></pre>
+<h3 id="&#x8BBE;&#x7F6E;&#x62BD;&#x5C49;view">&#x8BBE;&#x7F6E;&#x62BD;&#x5C49;View</h3>
+<p>&#x4E3A;&#x67D0;&#x4E2A;&#x65B9;&#x5411;&#x8BBE;&#x7F6E;&#x62BD;&#x5C49;view&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5982;&#x679C;view&#x4E0D;&#x4E3A;null&#xFF0C;&#x5219;&#x81EA;&#x52A8;enable&#x5F53;&#x524D;consumer&#x7684;&#x8BE5;&#x65B9;&#x5411;&#xFF1B;&#x5426;&#x5219;&#xFF0C;&#x5982;&#x679C;view&#x4E3A;null&#xFF0C;&#x5219;&#x81EA;&#x52A8;disable&#x5F53;&#x524D;consumer&#x7684;&#x8BE5;&#x65B9;&#x5411;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x65B9;&#x6CD5;&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">setDrawerView</td>
+<td style="text-align:left">int direction<br>View view</td>
+<td style="text-align:left">&#x5C06;view&#x8BBE;&#x7F6E;&#x4E3A;&#x6307;&#x5B9A;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;direction&#x65B9;&#x5411;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+<tr>
+<td style="text-align:left">setLeftDrawerView</td>
+<td style="text-align:left">View view</td>
+<td style="text-align:left">&#x5C06;View&#x8BBE;&#x7F6E;&#x4E3A;&#x5DE6;&#x4FA7;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;&#x5DE6;&#x4FA7;&#x7684;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+<tr>
+<td style="text-align:left">setRightDrawerView</td>
+<td style="text-align:left">View view</td>
+<td style="text-align:left">&#x5C06;View&#x8BBE;&#x7F6E;&#x4E3A;&#x53F3;&#x4FA7;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;&#x53F3;&#x4FA7;&#x7684;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+<tr>
+<td style="text-align:left">setTopDrawerView</td>
+<td style="text-align:left">View view</td>
+<td style="text-align:left">&#x5C06;View&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0A;&#x4FA7;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;&#x4E0A;&#x4FA7;&#x7684;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+<tr>
+<td style="text-align:left">setBottomDrawerView</td>
+<td style="text-align:left">View view</td>
+<td style="text-align:left">&#x5C06;View&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0B;&#x4FA7;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;&#x4E0B;&#x4FA7;&#x7684;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+<tr>
+<td style="text-align:left">setHorizontalDrawerView</td>
+<td style="text-align:left">View view</td>
+<td style="text-align:left">&#x5C06;View&#x8BBE;&#x7F6E;&#x4E3A;&#x5DE6;&#x53F3;&#x4E24;&#x4FA7;&#x7684;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;&#x5DE6;&#x53F3;&#x4E24;&#x4FA7;&#x7684;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+<tr>
+<td style="text-align:left">setVerticalDrawerView</td>
+<td style="text-align:left">View view</td>
+<td style="text-align:left">&#x5C06;View&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0A;&#x4E0B;&#x4E24;&#x4FA7;&#x7684;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;&#x4E0A;&#x4E0B;&#x4E24;&#x4FA7;&#x7684;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+<tr>
+<td style="text-align:left">setAllDirectionDrawerView</td>
+<td style="text-align:left">View view</td>
+<td style="text-align:left">&#x5C06;View&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;4&#x4FA7;&#x62BD;&#x5C49;&#xFF0C;&#x5E76;&#x5C06;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;4&#x4FA7;&#x7684;enable&#x8BBE;&#x7F6E;&#x4E3A;(view != null)</td>
+</tr>
+</tbody>
+</table>
+<p>&#x9664;&#x4E86;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x8BBE;&#x7F6E;&#x62BD;&#x5C49;View&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;xml&#x5E03;&#x5C40;&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F8B;&#x5982;demo&#x9996;&#x9875;&#x7684;&#x4FA7;&#x6ED1;&#x70B9;&#x8D5E;&#x63A7;&#x4EF6;:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">com.billy.android.swipe.SmartSwipeWrapper</span>
+    <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/main_ui_wrap_view&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;100dp&quot;</span>
+    <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;@drawable/menu_item_bg&quot;</span>
+    &gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x5DE6;&#x53F3;&#x4E24;&#x4FA7;&#x7684;&#x62BD;&#x5C49; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">LinearLayout</span> <span class="hljs-attr">app:layout_gravity</span>=<span class="hljs-string">&quot;right|left&quot;</span> <span class="hljs-attr">android:orientation</span>=<span class="hljs-string">&quot;horizontal&quot;</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">com.like.LikeButton</span>
+                <span class="hljs-attr">app:icon_type</span>=<span class="hljs-string">&quot;heart&quot;</span>
+                <span class="hljs-attr">app:icon_size</span>=<span class="hljs-string">&quot;25dp&quot;</span>
+                <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/star_button&quot;</span>
+                <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+                <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#15BABA&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">com.like.LikeButton</span>
+                <span class="hljs-attr">app:icon_type</span>=<span class="hljs-string">&quot;Star&quot;</span>
+                <span class="hljs-attr">app:icon_size</span>=<span class="hljs-string">&quot;25dp&quot;</span>
+                <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/like_button&quot;</span>
+                <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+                <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#CBECCC&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">LinearLayout</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x4E3B;&#x4F53;&#x63A7;&#x4EF6; contentView --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span> <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#f2f2f2&quot;</span>
+              <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+              <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+              <span class="hljs-attr">android:gravity</span>=<span class="hljs-string">&quot;center&quot;</span>
+              <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;@string/demo_main_author&quot;</span> /&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x4E0A;&#x4FA7;&#x62BD;&#x5C49; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">com.like.LikeButton</span>
+            <span class="hljs-attr">app:icon_type</span>=<span class="hljs-string">&quot;heart&quot;</span>
+            <span class="hljs-attr">app:icon_size</span>=<span class="hljs-string">&quot;25dp&quot;</span>
+            <span class="hljs-attr">app:layout_gravity</span>=<span class="hljs-string">&quot;top&quot;</span>
+            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#15BABA&quot;</span>/&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x4E0B;&#x4FA7;&#x62BD;&#x5C49; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">com.like.LikeButton</span>
+            <span class="hljs-attr">app:icon_type</span>=<span class="hljs-string">&quot;Thumb&quot;</span>
+            <span class="hljs-attr">app:icon_size</span>=<span class="hljs-string">&quot;25dp&quot;</span>
+            <span class="hljs-attr">app:layout_gravity</span>=<span class="hljs-string">&quot;bottom&quot;</span>
+            <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+            <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">android:background</span>=<span class="hljs-string">&quot;#CBECCC&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">com.billy.android.swipe.SmartSwipeWrapper</span>&gt;</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>SmartSwipeWrapper&#x7684;&#x5B50;view&#x4E2D;&#xFF0C;&#x7B2C;1&#x4E2A;&#x4E0D;&#x542B;<code>app:layout_gravity</code>&#x5C5E;&#x6027;&#x7684;&#x63A7;&#x4EF6;&#x4F5C;&#x4E3A;&#x88AB;wrap&#x7684;&#x4E3B;&#x4F53;contentView</li>
+<li>&#x5176;&#x5B83;view&#x9700;&#x8981;&#x8BBE;&#x7F6E;<code>app:layout_gravity</code>&#x624D;&#x6709;&#x6548;<ul>
+<li><code>app:layout_gravity=&quot;top&quot;</code>&#x8868;&#x793A;&#x4F5C;&#x4E3A;&#x4E0A;&#x4FA7;&#x62BD;&#x5C49;</li>
+<li><code>app:layout_gravity=&quot;right|left&quot;</code>&#x8868;&#x793A;&#x4F5C;&#x4E3A;&#x4E0A;&#x4E0B;&#x4E24;&#x4FA7;&#x7684;&#x62BD;&#x5C49;</li>
+<li>&#x5176;&#x5B83;&#x8BBE;&#x7F6E;&#x65B9;&#x5F0F;&#x540C;&#x7406;&#x53EF;&#x77E5;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5C5E;&#x6027;&#x5217;&#x8868;">&#x5C5E;&#x6027;&#x5217;&#x8868;</h3>
+<p>&#x7EE7;&#x627F;&#x81EA; <a href="../SwipeConsumer.html">SwipeConsumer</a>&#xFF0C;<a href="common_settings.html">&#x516C;&#x5171;&#x5C5E;&#x6027;</a>&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5C3D;&#x7686;&#x6709;&#x6548;</p>
+<p><em>getter/setter&#x90FD;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#xFF0C;&#x4E0D;&#x8D58;&#x8FF0;</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x53D8;&#x91CF;&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x53D6;&#x503C;&#x8303;&#x56F4;</th>
+<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
+<th style="text-align:left">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">mScrimColor</td>
+<td style="text-align:left">int</td>
+<td style="text-align:center">&#x989C;&#x8272;&#x503C;</td>
+<td style="text-align:center">0</td>
+<td style="text-align:left">&#x906E;&#x7F69;&#x73BB;&#x7483;&#x989C;&#x8272;&#x8272;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x4E3A;0&#xFF0C;&#x5219;&#x4E0D;&#x663E;&#x793A;&#x906E;&#x7F69;</td>
+</tr>
+<tr>
+<td style="text-align:center">mShadowColor</td>
+<td style="text-align:left">int</td>
+<td style="text-align:center">&#x989C;&#x8272;&#x503C;</td>
+<td style="text-align:center">0</td>
+<td style="text-align:left">&#x8FB9;&#x7F18;&#x9634;&#x5F71;&#x989C;&#x8272;&#x8272;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x4E3A;0&#xFF0C;&#x5219;&#x4E0D;&#x663E;&#x793A;&#x8FB9;&#x7F18;&#x9634;&#x5F71;</td>
+</tr>
+<tr>
+<td style="text-align:center">mShadowSize</td>
+<td style="text-align:left">int</td>
+<td style="text-align:center">&gt;=0</td>
+<td style="text-align:center">10dp</td>
+<td style="text-align:left">&#x8FB9;&#x7F18;&#x9634;&#x5F71;&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x5982;&#x679C;&#x4E3A;0&#xFF0C;&#x5219;&#x4E0D;&#x663E;&#x793A;&#x8FB9;&#x7F18;&#x9634;&#x5F71;</td>
+</tr>
+<tr>
+<td style="text-align:center">mShowScrimAndShadowOutsideContentView</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:center">ture/false</td>
+<td style="text-align:center">false</td>
+<td style="text-align:left">&#x906E;&#x7F69;&#x548C;&#x8FB9;&#x7F18;&#x9634;&#x5F71;&#x663E;&#x793A;&#x5728;contentView&#x7684;&#x5916;&#x4FA7;</td>
+</tr>
+</tbody>
+</table>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; qibilly.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-09 21:41:06
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="StretchConsumer.html" class="navigation navigation-prev " aria-label="Previous page: StretchConsumer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SlidingConsumer.html" class="navigation navigation-next " aria-label="Next page: SlidingConsumer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DrawerConsumer","level":"1.2.5","depth":2,"next":{"title":"SlidingConsumer","level":"1.2.6","depth":2,"path":"pages/consumers/SlidingConsumer.md","ref":"pages/consumers/SlidingConsumer.md","articles":[]},"previous":{"title":"StretchConsumer","level":"1.2.4","depth":2,"path":"pages/consumers/StretchConsumer.md","ref":"pages/consumers/StretchConsumer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-search","search-pro","expandable-chapters-small","chapter-fold","multipart","emphasize","include-codeblock","ace","splitter","tbfed-pagefooter","copy-code-button","sectionx","donate","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy qibilly.com 2019","modify_label":"最后修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"emphasize":{},"ace":{},"livereload":{},"splitter":{},"search-pro":{},"multipart":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://github.com/luckybilly/CC/raw/master/image/shoukuan_alipay.png","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://github.com/luckybilly/CC/raw/master/image/shoukuan_wechat.png","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"expandable-chapters-small":{},"copy-code-button":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"齐翊","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"name":"`SmartSwipe`","baseName":"`SwipeConsumer`"},"title":"Smart Swipe","language":"zh-hans","gitbook":"*"},"file":{"path":"pages/consumers/DrawerConsumer.md","mtime":"2019-07-09T13:41:06.370Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-10T09:39:45.344Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

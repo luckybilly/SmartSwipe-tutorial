@@ -1,0 +1,16 @@
+.gitbook-link {
+    display: none !important;
+}
+
+.page-inner {   
+  max-width: 1000px;    
+  padding: 2px 2px 2px 2px;
+}
+.markdown-section pre {
+    overflow: auto;
+    word-wrap: normal;
+    margin: 0;
+    padding: .85em 1em;
+    margin-bottom: 1.275em;
+    background: #ddd;
+}
