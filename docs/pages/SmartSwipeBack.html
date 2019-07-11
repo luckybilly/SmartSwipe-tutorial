@@ -1,0 +1,815 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>全局侧滑返回 · Smart Swipe</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="齐翊">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SmartSwipeRefresh.html" />
+    
+    
+    <link rel="prev" href="releaseMode.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"luckybilly/SmartSwipe-tutorial","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    关于SmartSwipe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="SwipeConsumer.html">
+            
+                <a href="SwipeConsumer.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    SwipeConsumer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="consumers/common_settings.html">
+            
+                <a href="consumers/common_settings.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    公共属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="consumers/SpaceConsumer.html">
+            
+                <a href="consumers/SpaceConsumer.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    SpaceConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="consumers/StretchConsumer.html">
+            
+                <a href="consumers/StretchConsumer.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    StretchConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="consumers/DrawerConsumer.html">
+            
+                <a href="consumers/DrawerConsumer.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    DrawerConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="consumers/SlidingConsumer.html">
+            
+                <a href="consumers/SlidingConsumer.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    SlidingConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="consumers/TranslucentSlidingConsumer.html">
+            
+                <a href="consumers/TranslucentSlidingConsumer.html">
+            
+                    
+                        <b>1.2.6.</b>
+                    
+                    TranslucentSlidingConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="consumers/ShuttersConsumer.html">
+            
+                <a href="consumers/ShuttersConsumer.html">
+            
+                    
+                        <b>1.2.7.</b>
+                    
+                    ShuttersConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="consumers/DoorConsumer.html">
+            
+                <a href="consumers/DoorConsumer.html">
+            
+                    
+                        <b>1.2.8.</b>
+                    
+                    DoorConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="consumers/StayConsumer.html">
+            
+                <a href="consumers/StayConsumer.html">
+            
+                    
+                        <b>1.2.9.</b>
+                    
+                    StayConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="consumers/BezierBackConsumer.html">
+            
+                <a href="consumers/BezierBackConsumer.html">
+            
+                    
+                        <b>1.2.10.</b>
+                    
+                    BezierBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="consumers/ActivitySlidingBackConsumer.html">
+            
+                <a href="consumers/ActivitySlidingBackConsumer.html">
+            
+                    
+                        <b>1.2.11.</b>
+                    
+                    ActivitySlidingBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="consumers/ActivityShuttersBackConsumer.html">
+            
+                <a href="consumers/ActivityShuttersBackConsumer.html">
+            
+                    
+                        <b>1.2.12.</b>
+                    
+                    ActivityShuttersBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="consumers/ActivityDoorBackConsumer.html">
+            
+                <a href="consumers/ActivityDoorBackConsumer.html">
+            
+                    
+                        <b>1.2.13.</b>
+                    
+                    ActivityDoorBackConsumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="SwipeListener.html">
+            
+                <a href="SwipeListener.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    侧滑监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="SwipeDistanceCalculator.html">
+            
+                <a href="SwipeDistanceCalculator.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    侧滑距离计算器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="directions.html">
+            
+                <a href="directions.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    侧滑方向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="releaseMode.html">
+            
+                <a href="releaseMode.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    Release处理方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="SmartSwipeBack.html">
+            
+                <a href="SmartSwipeBack.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    全局侧滑返回
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="SmartSwipeRefresh.html">
+            
+                <a href="SmartSwipeRefresh.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    下拉刷新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="SwipeConsumerExclusiveGroup.html">
+            
+                <a href="SwipeConsumerExclusiveGroup.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    互斥组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >全局侧滑返回</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="smartswipeback"><a name="smartswipeback" class="plugin-anchor" href="#smartswipeback"><i class="fa fa-link" aria-hidden="true"></i></a>SmartSwipeBack</h2>
+<hr>
+<p>&#x5B9E;&#x73B0;&#x5168;&#x5C40;Activity&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;</p>
+<h3 id="&#x516C;&#x5171;&#x53C2;&#x6570;&#x8BF4;&#x660E;"><a name="&#x516C;&#x5171;&#x53C2;&#x6570;&#x8BF4;&#x660E;" class="plugin-anchor" href="#&#x516C;&#x5171;&#x53C2;&#x6570;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516C;&#x5171;&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3>
+<ul>
+<li>application: Application&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x4E8E;&#x6CE8;&#x518C;&#x5168;&#x5C40;activity&#x751F;&#x547D;&#x5468;&#x671F;&#x76D1;&#x542C;</li>
+<li>edgeSize&#xFF1A;&#x8FB9;&#x7F18;&#x89E6;&#x53D1;&#x533A;&#x57DF;&#x5C3A;&#x5BF8;&#x50CF;&#x7D20;&#x503C;&#xFF08;dp&#x9700;&#x8F6C;&#x6362;&#x4E3A;px&#xFF09;&#xFF0C;&#x82E5;&#x8BBE;&#x7F6E;&#x4E3A;0&#xFF0C;&#x5219;&#x8868;&#x793A;&#x6574;&#x4E2A;activity&#x533A;&#x57DF;&#x90FD;&#x53EF;&#x89E6;&#x53D1;</li>
+<li>direction&#xFF1A;&#x89E6;&#x53D1;&#x65B9;&#x4F4D;&#xFF0C;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#xFF0C;&#x5176;&#x53D6;&#x503C;&#x53EF;&#x53C2;&#x8003;<a href="directions.html">&#x4FA7;&#x6ED1;&#x65B9;&#x5411;</a>&#xFF0C;&#x82E5;&#x4E3A;0&#xFF0C;&#x5219;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x4FA7;&#x6ED1;</li>
+<li>filter: Activity&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x8FC7;&#x6EE4;&#x786E;&#x5B9A;&#x5BF9;&#x54EA;&#x4E9B;activity&#x8FDB;&#x884C;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x82E5;&#x4E3A;null&#xFF0C;&#x5219;&#x4E0D;&#x8FC7;&#x6EE4;&#xFF0C;&#x5BF9;&#x6240;&#x6709;activity&#x90FD;&#x6267;&#x884C;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x7684;&#x5C01;&#x88C5;</li>
+</ul>
+<p>Activity&#x8FC7;&#x6EE4;&#x5668;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">ActivitySwipeBackFilter</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Determine whether the activity parameter should swipe back
+     * @param activity The activity to wrap or not
+     * @return true: need to wrap with swipe back, false: do not wrap
+     */</span>
+    <span class="token keyword">boolean</span> <span class="token function">onFilter</span><span class="token punctuation">(</span><span class="token class-name">Activity</span> activity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B83;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#x6765;&#x4E3A;SmartSwipeBack&#x6DFB;&#x52A0;&#x8FC7;&#x6EE4;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x4E3B;Activity&#x4E0D;&#x9700;&#x8981;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x529F;&#x80FD;&#xFF0C;&#x5176;&#x5B83;Activity&#x90FD;&#x91C7;&#x7528;&#x4EFF;&#x5FAE;&#x4FE1;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x6548;&#x679C;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activitySlidingBack</span><span class="token punctuation">(</span>application<span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">onFilter</span><span class="token punctuation">(</span><span class="token class-name">Activity</span> activity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;activity&#xFF0C;&#x8FD4;&#x56DE;true&#x4EE3;&#x8868;&#x9700;&#x8981;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#xFF1B;false&#x8868;&#x793A;&#x4E0D;&#x9700;&#x8981;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;</span>
+        <span class="token keyword">return</span> <span class="token operator">!</span><span class="token punctuation">(</span>activity <span class="token keyword">instanceof</span> <span class="token class-name">MainActivity</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5DF2;&#x5C01;&#x88C5;&#x7684;5&#x79CD;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;"><a name="&#x5DF2;&#x5C01;&#x88C5;&#x7684;5&#x79CD;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;" class="plugin-anchor" href="#&#x5DF2;&#x5C01;&#x88C5;&#x7684;5&#x79CD;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5DF2;&#x5C01;&#x88C5;&#x7684;5&#x79CD;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;</h3>
+<ul>
+<li>&#x4EFF;&#x624B;&#x673A;QQ&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;</li>
+</ul>
+<div align="center"><a href="../images/stayConsumer.gif" data-lightbox="8c3c4f2c-89b5-409c-86b4-52a41b5648b1" data-title="undefined"><img src="../images/stayConsumer.gif"></a><br><br></div>
+
+
+<pre class="language-"><code class="lang-java"><span class="token comment">//activity&#x4FDD;&#x6301;&#x4E0D;&#x52A8;&#xFF0C;&#x6839;&#x636E;&#x6700;&#x540E;&#x91CA;&#x653E;&#x65F6;&#x7684;&#x6ED1;&#x52A8;&#x901F;&#x7387;&#x6765;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x5173;&#x95ED;activity</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityStayBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter<span class="token punctuation">,</span> <span class="token keyword">int</span> edgeSize<span class="token punctuation">,</span> <span class="token keyword">int</span> direction<span class="token punctuation">)</span>
+
+<span class="token comment">//&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x89E6;&#x53D1;&#x533A;&#x57DF;&#x91C7;&#x7528;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF1A;&#x5DE6;&#x4FA7;&#x8FB9;&#x7F18;20dp&#x8303;&#x56F4;&#x5185;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityStayBack</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> activitySwipeBackFilter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>&#x4EFF;&#x5FAE;&#x4FE1;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x6548;&#x679C;</li>
+</ul>
+<div align="center"><a href="../images/activitySlidingBackConsumer.gif" data-lightbox="cb9f0e5b-b34a-437b-861f-7f4b128c6bd5" data-title="undefined"><img src="../images/activitySlidingBackConsumer.gif"></a><br><br></div>
+
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x6DFB;&#x52A0;&#x5168;&#x5C40;&#x900F;&#x660E;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;(5.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#x4F7F;&#x7528;activityStayBack)</span>
+<span class="token comment">// scrimColor: &#x73BB;&#x7483;&#x989C;&#x8272;&#xFF0C;&#x663E;&#x793A;&#x5728;&#x524D;&#x4E00;&#x4E2A;activity&#x4E4B;&#x4E0A;&#x7684;&#x534A;&#x900F;&#x660E;&#x906E;&#x7F69;&#x989C;&#x8272;&#x503C;, &#x9ED8;&#x8BA4;&#x4E3A;&#x900F;&#x660E;&#x8272;</span>
+<span class="token comment">// shadowColor: &#x5728;&#x5F53;&#x524D;activity&#x79FB;&#x52A8;&#x7684;&#x8FB9;&#x7F18;&#x663E;&#x793A;&#x7684;&#x9634;&#x5F71;&#x989C;&#x8272;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x900F;&#x660E;&#x8272;</span>
+<span class="token comment">// shadowSize: shadowColor&#x663E;&#x793A;&#x7684;&#x5927;&#x5C0F;&#x50CF;&#x7D20;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;10dp</span>
+<span class="token comment">// factor: &#x5173;&#x8054;&#x79FB;&#x52A8;&#x7CFB;&#x6570;</span>
+<span class="token comment">//        0:         &#x524D;&#x4E00;&#x4E2A;activity&#x4FDD;&#x6301;&#x4E0D;&#x52A8;&#xFF0C;&#x5F53;&#x524D;activity&#x968F;&#x7740;&#x624B;&#x52BF;&#x6ED1;&#x52A8;&#x800C;&#x5E73;&#x79FB;&#xFF0C;&#x79FB;&#x52A8;&#x540E;&#x53EF;&#x900F;&#x89C6;&#x524D;&#x4E00;&#x4E2A;activity</span>
+<span class="token comment">//        (0,1):     &#x524D;&#x4E00;&#x4E2A;activity&#x4E0E;&#x5F53;&#x524D;activity&#x6709;&#x5173;&#x8054;&#x79FB;&#x52A8;&#x6548;&#x679C;&#xFF0C;&#x5177;&#x4F53;&#x6548;&#x679C;&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;</span>
+<span class="token comment">//        1:         &#x524D;&#x4E00;&#x4E2A;activity&#x8DDF;&#x968F;&#x5F53;&#x524D;activity&#x4E00;&#x8D77;&#x5E73;&#x79FB;&#xFF08;&#x7C7B;&#x4F3C;&#x4E8E;ViewPager&#x7684;&#x9ED8;&#x8BA4;&#x5E73;&#x79FB;&#x6548;&#x679C;&#xFF09;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activitySlidingBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter
+            <span class="token punctuation">,</span> <span class="token keyword">int</span> edgeSize<span class="token punctuation">,</span> <span class="token keyword">int</span> scrimColor<span class="token punctuation">,</span> <span class="token keyword">int</span> shadowColor<span class="token punctuation">,</span> <span class="token keyword">int</span> shadowSize
+            <span class="token punctuation">,</span> <span class="token keyword">float</span> factor<span class="token punctuation">,</span> <span class="token keyword">int</span> direction<span class="token punctuation">)</span>
+
+<span class="token comment">//&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x90E8;&#x5206;&#x53C2;&#x6570;&#x91C7;&#x7528;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF1A;</span>
+<span class="token comment">//    &#x89E6;&#x53D1;&#x533A;&#x57DF;&#xFF1A;&#x5DE6;&#x4FA7;&#x8FB9;&#x7F18;20dp</span>
+<span class="token comment">//    &#x906E;&#x7F69;&#x73BB;&#x7483;&#x989C;&#x8272;&#x503C;: Color.TRANSPARENT</span>
+<span class="token comment">//    &#x8FB9;&#x7F18;&#x9634;&#x5F71;&#x989C;&#x8272;&#x503C;: 0x80000000</span>
+<span class="token comment">//    &#x8FB9;&#x7F18;&#x9634;&#x5F71;&#x5C3A;&#x5BF8;: 10dp</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activitySlidingBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter<span class="token punctuation">,</span> <span class="token keyword">float</span> factor<span class="token punctuation">)</span>
+
+<span class="token comment">//&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x5173;&#x8054;&#x79FB;&#x52A8;&#x7CFB;&#x6570;&#x91C7;&#x7528;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#xFF1A;0.5F</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activitySlidingBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>&#x4EFF;MIUI&#x7CFB;&#x7EDF;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;</li>
+</ul>
+<div align="center"><a href="../images/bezierBackConsumer.gif" data-lightbox="79c7f9cc-fd99-4eb8-861c-1a08ec3612b4" data-title="undefined"><img src="../images/bezierBackConsumer.gif"></a><br><br></div>
+
+<pre class="language-"><code class="lang-java"><span class="token comment">// size: &#x5C3A;&#x5BF8;&#x5927;&#x5C0F;&#xFF08;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x4FA7;&#x6ED1;&#x65F6;&#x6307;&#x7684;&#x662F;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x533A;&#x57DF;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x4FA7;&#x6ED1;&#x65F6;&#x6307;&#x7684;&#x662F;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x533A;&#x57DF;&#x7684;&#x5BBD;&#x5EA6;&#xFF09;&#x5355;&#x4F4D;&#x4E3A;px(dp&#x9700;&#x8F6C;&#x6362;&#x4E3A;px)</span>
+<span class="token comment">// thickness: &#x4FA7;&#x6ED1;&#x62C9;&#x6EE1;&#x65F6;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x533A;&#x57DF;&#x7684;&#x539A;&#x5EA6;&#xFF08;&#x6C34;&#x5E73;&#x65B9;&#x7EBF;&#x4FA7;&#x6ED1;&#x65F6;&#x6307;&#x7684;&#x662F;&#x6700;&#x5927;&#x5BBD;&#x5EA6;&#xFF0C;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x4FA7;&#x6ED1;&#x65F6;&#x6307;&#x7684;&#x662F;&#x6700;&#x5927;&#x9AD8;&#x5EA6;&#xFF09;&#x5355;&#x4F4D;&#x4E3A;px(dp&#x9700;&#x8F6C;&#x6362;&#x4E3A;px)</span>
+<span class="token comment">// color: &#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x548C;&#x5C4F;&#x5E55;&#x8FB9;&#x7F18;&#x6784;&#x6210;&#x7684;&#x533A;&#x57DF;&#x586B;&#x5145;&#x8272;</span>
+<span class="token comment">// arrowColor: &#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x533A;&#x57DF;&#x5185;&#x7BAD;&#x5934;&#x7684;&#x989C;&#x8272;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityBezierBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter
+        <span class="token punctuation">,</span> <span class="token keyword">int</span> edgeSize<span class="token punctuation">,</span> <span class="token keyword">int</span> size<span class="token punctuation">,</span> <span class="token keyword">int</span> thickness<span class="token punctuation">,</span> <span class="token keyword">int</span> color<span class="token punctuation">,</span> <span class="token keyword">int</span> arrowColor<span class="token punctuation">,</span> <span class="token keyword">int</span> direction<span class="token punctuation">)</span>
+
+<span class="token comment">//&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x90E8;&#x5206;&#x53C2;&#x6570;&#x91C7;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;</span>
+<span class="token comment">// thickness: 30dp</span>
+<span class="token comment">// size: 200dp</span>
+<span class="token comment">// &#x89E6;&#x53D1;&#x65B9;&#x5411;&#xFF1A;&#x5DE6;&#x4FA7;</span>
+<span class="token comment">// &#x89E6;&#x53D1;&#x533A;&#x57DF;&#x8303;&#x56F4;&#x9700;&#x8BBE;&#x7F6E;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityBezierBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter<span class="token punctuation">,</span> <span class="token keyword">int</span> edgeSize<span class="token punctuation">)</span>
+
+<span class="token comment">//&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x89E6;&#x53D1;&#x533A;&#x57DF;&#x9ED8;&#x8BA4;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#xFF1A;&#x5DE6;&#x4FA7;20dp&#x8303;&#x56F4;&#x5185;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityBezierBack</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> activitySwipeBackFilter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>&#x5F00;&#x95E8;&#x5F0F;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;</li>
+</ul>
+<p>&#x652F;&#x6301;&#x7684;&#x6700;&#x4F4E;api&#x7B49;&#x7EA7;&#x4E3A;21&#xFF0C;&#x5373;android 5.0</p>
+<p>&#x4E0D;&#x652F;&#x6301;&#x542B;&#x6709;SurfaceView/GLSurfaceView/TextureView/VideoView&#x7B49;&#x63A7;&#x4EF6;&#x7684;&#x9875;&#x9762;&#xFF08;&#x5C06;&#x4F1A;&#x5728;&#x8FD9;&#x4E9B;view&#x7684;&#x533A;&#x57DF;&#x663E;&#x793A;&#x900F;&#x660E;&#xFF09;&#xFF0C;&#x5982;&#x679C;app&#x5185;&#x6709;&#x9875;&#x9762;&#x542B;&#x6709;&#x8FD9;&#x4E9B;&#x63A7;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x5728;ActivitySwipeBackFilter&#x4E2D;&#x5C06;&#x5176;&#x8FC7;&#x6EE4;</p>
+<div align="center"><a href="../images/activityDoorBackConsumer.gif" data-lightbox="565acf08-4e6c-446b-8bd4-99e86f3d334c" data-title="undefined"><img src="../images/activityDoorBackConsumer.gif"></a><br><br></div>
+
+
+<pre class="language-"><code class="lang-java"><span class="token comment">// scrimColor: &#x73BB;&#x7483;&#x989C;&#x8272;&#xFF0C;&#x5373;&#x5F00;&#x95E8;&#x8FC7;&#x7A0B;&#x4E2D;&#x900F;&#x89C6;&#x524D;&#x4E00;&#x4E2A;activity&#x65F6;&#x7684;&#x906E;&#x7F69;&#x989C;&#x8272;</span>
+<span class="token comment">// refreshable: &#x662F;&#x5426;&#x5B9E;&#x65F6;&#x5237;&#x65B0;&#xFF0C;&#x82E5;&#x9875;&#x9762;&#x6709;&#x52A8;&#x753B;&#x7B49;&#x5185;&#x5BB9;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A;true&#x4EE5;&#x53D6;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;false&#x4EE5;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityDoorBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter
+        <span class="token punctuation">,</span> <span class="token keyword">int</span> direction<span class="token punctuation">,</span> <span class="token keyword">int</span> edgeSize<span class="token punctuation">,</span> <span class="token keyword">int</span> scrimColor<span class="token punctuation">,</span> <span class="token keyword">boolean</span> refreshable<span class="token punctuation">)</span>
+
+<span class="token comment">//&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#xFF1A;</span>
+<span class="token comment">// scrimColor: 0x80000000</span>
+<span class="token comment">// refreshable: true</span>
+<span class="token comment">// &#x89E6;&#x53D1;&#x533A;&#x57DF;&#x9ED8;&#x8BA4;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#xFF1A;&#x5DE6;&#x4FA7;20dp&#x8303;&#x56F4;&#x5185;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityDoorBack</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> activitySwipeBackFilter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>&#x767E;&#x53F6;&#x7A97;&#x5F0F;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;</li>
+</ul>
+<p>&#x652F;&#x6301;&#x7684;&#x6700;&#x4F4E;api&#x7B49;&#x7EA7;&#x4E3A;21&#xFF0C;&#x5373;android 5.0</p>
+<p>&#x4E0D;&#x652F;&#x6301;&#x542B;&#x6709;SurfaceView/GLSurfaceView/TextureView/VideoView&#x7B49;&#x63A7;&#x4EF6;&#x7684;&#x9875;&#x9762;&#xFF08;&#x5C06;&#x4F1A;&#x5728;&#x8FD9;&#x4E9B;view&#x7684;&#x533A;&#x57DF;&#x663E;&#x793A;&#x900F;&#x660E;&#xFF09;&#xFF0C;&#x5982;&#x679C;app&#x5185;&#x6709;&#x9875;&#x9762;&#x542B;&#x6709;&#x8FD9;&#x4E9B;&#x63A7;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x5728;ActivitySwipeBackFilter&#x4E2D;&#x5C06;&#x5176;&#x8FC7;&#x6EE4;</p>
+<div align="center"><a href="../images/activityShuttersBackConsumer.gif" data-lightbox="99bb4df0-b0c2-4561-9804-34e824567d5c" data-title="undefined"><img src="../images/activityShuttersBackConsumer.gif"></a><br><br></div>
+
+<pre class="language-"><code class="lang-java"><span class="token comment">// scrimColor: &#x73BB;&#x7483;&#x989C;&#x8272;&#xFF0C;&#x5373;&#x5F00;&#x95E8;&#x8FC7;&#x7A0B;&#x4E2D;&#x900F;&#x89C6;&#x524D;&#x4E00;&#x4E2A;activity&#x65F6;&#x7684;&#x906E;&#x7F69;&#x989C;&#x8272;</span>
+<span class="token comment">// refreshable: &#x662F;&#x5426;&#x5B9E;&#x65F6;&#x5237;&#x65B0;&#xFF0C;&#x82E5;&#x9875;&#x9762;&#x6709;&#x52A8;&#x753B;&#x7B49;&#x5185;&#x5BB9;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E3A;true&#x4EE5;&#x53D6;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;false&#x4EE5;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityShuttersBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token class-name">ActivitySwipeBackFilter</span> filter
+            <span class="token punctuation">,</span> <span class="token keyword">int</span> direction<span class="token punctuation">,</span> <span class="token keyword">int</span> edgeSize<span class="token punctuation">,</span> <span class="token keyword">int</span> scrimColor<span class="token punctuation">,</span> <span class="token keyword">boolean</span> refreshable<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token comment">//&#x5728;&#x4E0A;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#xFF1A;</span>
+<span class="token comment">// scrimColor: 0x80000000</span>
+<span class="token comment">// refreshable: true</span>
+<span class="token comment">// &#x89E6;&#x53D1;&#x533A;&#x57DF;&#x9ED8;&#x8BA4;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#xFF1A;&#x5DE6;&#x4FA7;20dp&#x8303;&#x56F4;&#x5185;</span>
+<span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityShuttersBack</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> activitySwipeBackFilter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x517C;&#x5BB9;50&#x4EE5;&#x4E0B;&#x7CFB;&#x7EDF;&#x7248;&#x672C;"><a name="&#x517C;&#x5BB9;50&#x4EE5;&#x4E0B;&#x7CFB;&#x7EDF;&#x7248;&#x672C;" class="plugin-anchor" href="#&#x517C;&#x5BB9;50&#x4EE5;&#x4E0B;&#x7CFB;&#x7EDF;&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x517C;&#x5BB9;5.0&#x4EE5;&#x4E0B;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</h3>
+<p>&#x7531;&#x4E8E;&#x91C7;&#x7528;&#x4E86;activity&#x900F;&#x660E;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x900F;&#x89C6;&#x524D;&#x4E00;&#x4E2A;activity&#xFF0C;&#x5728;5.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x7CFB;&#x7EDF;&#x4E0A;&#x5B58;&#x5728;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;&#xFF0C;&#x5BFC;&#x81F4;&#x4EFF;&#x5FAE;&#x4FE1;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x3001;&#x5F00;&#x95E8;&#x5F0F;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x548C;&#x767E;&#x53F6;&#x7A97;&#x5F0F;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x53EA;&#x5728;5.0&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x7684;&#x8BBE;&#x5907;&#x751F;&#x6548;&#x3002;</p>
+<p>&#x7531;&#x4E8E;5.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x7684;&#x8BBE;&#x5907;&#x5360;&#x6BD4;&#x5DF2;&#x7ECF;&#x8F83;&#x5C11;&#xFF0C;&#x4E0E;&#x5176;&#x91C7;&#x7528;&#x4F1A;&#x4FEE;&#x6539;&#x4E3B;&#x9898;&#x4E3A;&#x900F;&#x660E;&#x5E76;&#x5728;onCreated&#x4E2D;&#x5728;&#x53D8;&#x4E3A;&#x4E0D;&#x900F;&#x660E;&#x7B49;&#x8F83;&#x4E3A;&#x590D;&#x6742;&#x7684;&#x65B9;&#x6848;&#xFF0C;&#x4E0D;&#x5982;&#x5206;&#x522B;&#x4E3A;5.0&#x4EE5;&#x4E0A;&#x53CA;&#x4EE5;&#x4E0B;&#x7684;&#x91C7;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;</p>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">Build</span><span class="token punctuation">.</span>VERSION<span class="token punctuation">.</span>SDK_INT <span class="token operator">&lt;</span> <span class="token class-name">Build</span><span class="token punctuation">.</span>VERSION_CODES<span class="token punctuation">.</span>LOLLIPOP<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//5.0&#x4EE5;&#x4E0B;&#x7528;&#x4EFF;MIUI&#x7CFB;&#x7EDF;&#x7684;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;</span>
+    <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityBezierBack</span><span class="token punctuation">(</span>application<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">//5.0&#x53CA;&#x4EE5;&#x4E0A;&#x7528;&#x767E;&#x53F6;&#x7A97;&#x8FD4;&#x56DE;</span>
+    <span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityShuttersBack</span><span class="token punctuation">(</span>application<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><em>&#x6CE8;&#xFF1A;&#x4EFF;&#x5FAE;&#x4FE1;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;(activitySlidingBack)&#x65B9;&#x6848;&#x5728;5.0&#x4EE5;&#x4E0B;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x4EFF;&#x624B;&#x673A;QQ&#x7684;&#x4FA7;&#x6ED1;&#x65B9;&#x6848;(activityStayBack)</em></p>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;" class="plugin-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x65B9;&#x6848;</h3>
+<p>&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x5C01;&#x88C5;&#x7684;&#x65B9;&#x6848;&#x5E76;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x60A8;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#xFF0C;&#x53EF;&#x4EE5;&#x4EFF;&#x7167;&#x8FD9;&#x4E9B;&#x5C01;&#x88C5;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x6765;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x66F4;&#x5408;&#x9002;&#x5F53;&#x524D;&#x9700;&#x6C42;&#x7684;&#x4FA7;&#x6ED1;&#x65B9;&#x6848;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;SwipeBackConsumerFactory&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;&#xFF0C;&#x7528;&#x4E8E;&#x4E3A;&#x4E0D;&#x540C;&#x7684;activity&#x521B;&#x5EFA;&#x4FA7;&#x6ED1;&#x8FD4;&#x56DE;&#x529F;&#x80FD;&#x5BF9;&#x5E94;&#x7684;<code>SwipeConsumer</code></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">SwipeBackConsumerFactory</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Create SwipeConsumer to do swipe back business for activity
+     * @param activity activity to wrap with swipe back
+     * @return SwipeConsumer
+     */</span>
+    <span class="token class-name">SwipeConsumer</span> <span class="token function">createSwipeBackConsumer</span><span class="token punctuation">(</span><span class="token class-name">Activity</span> activity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5728;&#x5408;&#x9002;&#x7684;&#x4F4D;&#x7F6E;&#x8C03;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#xFF0C; &#x4F20;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x7684;SwipeBackConsumerFactory&#x5BF9;&#x8C61;&#xFF0C;&#x5C06;&#x5176;&#x5E94;&#x7528;&#x4E8E;&#x5168;&#x5C40;activity</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">SmartSwipeBack</span><span class="token punctuation">.</span><span class="token function">activityBack</span><span class="token punctuation">(</span><span class="token class-name">Application</span> application<span class="token punctuation">,</span> <span class="token class-name">SwipeBackConsumerFactory</span> factory<span class="token punctuation">,</span> <span class="token class-name">ActivitySwipeBackFilter</span> filter<span class="token punctuation">)</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; qibilly.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2019-07-09 12:06:12
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="releaseMode.html" class="navigation navigation-prev " aria-label="Previous page: Release处理方式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SmartSwipeRefresh.html" class="navigation navigation-next " aria-label="Next page: 下拉刷新">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"全局侧滑返回","level":"3.1","depth":1,"next":{"title":"下拉刷新","level":"3.2","depth":1,"path":"pages/SmartSwipeRefresh.md","ref":"pages/SmartSwipeRefresh.md","articles":[]},"previous":{"title":"Release处理方式","level":"2.4","depth":1,"path":"pages/releaseMode.md","ref":"pages/releaseMode.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-search","search-pro","chapter-fold","splitter","tbfed-pagefooter","copy-code-button","donate","prism","todo","anchors","github-buttons","sharing-plus","flexible-alerts","pageview-count","auto-scroll-table","lightbox","livereload"],"styles":{"mobi":"styles/mobi.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy qibilly.com 2019","modify_label":"最后修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{},"livereload":{},"todo":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://github.com/luckybilly/CC/raw/master/image/shoukuan_alipay.png","alipayText":"支付宝","button":"请作者喝咖啡","title":"","wechat":"https://github.com/luckybilly/CC/raw/master/image/shoukuan_wechat.png","wechatText":"微信"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true},"pageview-count":{},"github-buttons":{"repo":"luckybilly/SmartSwipe-tutorial","types":["star","watch","fork"],"size":"small"},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"copy-code-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":false,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"齐翊","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"name":"`SmartSwipe`","baseName":"`SwipeConsumer`"},"title":"Smart Swipe","language":"zh-hans","gitbook":"*"},"file":{"path":"pages/SmartSwipeBack.md","mtime":"2019-07-09T04:06:12.384Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-11T16:20:11.040Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
