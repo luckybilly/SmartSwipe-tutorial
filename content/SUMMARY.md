@@ -1,9 +1,6 @@
-# Summary
-
-* [简介](/README.md)
+* [关于SmartSwipe](/README.md)
 * [SwipeConsumer](/pages/SwipeConsumer.md)
 	* [公共属性](/pages/consumers/common_settings.md)
-	* [自定义Consumer](/pages/consumers/CustomerConsumer.md)
 	* [SpaceConsumer](/pages/consumers/SpaceConsumer.md)
 	* [StretchConsumer](/pages/consumers/StretchConsumer.md)
 	* [DrawerConsumer](/pages/consumers/DrawerConsumer.md)
@@ -16,10 +13,12 @@
 	* [ActivitySlidingBackConsumer](/pages/consumers/ActivitySlidingBackConsumer.md)
 	* [ActivityShuttersBackConsumer](/pages/consumers/ActivityShuttersBackConsumer.md)
 	* [ActivityDoorBackConsumer](/pages/consumers/ActivityDoorBackConsumer.md)
-* [全局侧滑返回](/pages/SmartSwipeBack.md)
-* [下拉刷新](/pages/SmartSwipeRefresh.md)
+---
 * [侧滑监听](/pages/SwipeListener.md)
 * [侧滑距离计算器](/pages/SwipeDistanceCalculator.md)
 * [侧滑方向](/pages/directions.md)
 * [Release处理方式](/pages/releaseMode.md)
+---
+* [全局侧滑返回](/pages/SmartSwipeBack.md)
+* [下拉刷新](/pages/SmartSwipeRefresh.md)
 * [互斥组](/pages/SwipeConsumerExclusiveGroup.md)

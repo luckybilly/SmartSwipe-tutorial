@@ -6,20 +6,22 @@
       "-sharing",
       "-search",
       "search-pro",
-      "expandable-chapters-small",
       "chapter-fold",
-      "multipart",
-      "emphasize",
-      "include-codeblock",
-      "ace",
       "splitter",
       "tbfed-pagefooter",
       "copy-code-button",
-      "sectionx",
-      "donate"
+      "donate",
+      "prism",
+      "todo",
+      "anchors",
+      "github-buttons", 
+      "sharing-plus",
+      "flexible-alerts",
+      "pageview-count",
+      "auto-scroll-table",
+      "lightbox"
     ],
     "pluginsConfig":{
-      "expandable-chapters-small":{},
       "tbfed-pagefooter": {
         "copyright": "Copyright &copy qibilly.com 2019",
         "modify_label": "最后修改时间：",
@@ -29,13 +31,40 @@
           "wechat": "https://github.com/luckybilly/CC/raw/master/image/shoukuan_wechat.png",
           "alipay": "https://github.com/luckybilly/CC/raw/master/image/shoukuan_alipay.png",
           "title": "",
-          "button": "打赏",
-          "alipayText": "支付宝打赏",
-          "wechatText": "微信打赏"
+          "button": "请作者喝咖啡",
+          "alipayText": "支付宝",
+          "wechatText": "微信"
+      },
+      "theme-default": {
+          "showLevel": true
+      },
+      "github-buttons": {
+          "repo": "luckybilly/SmartSwipe-tutorial",
+          "types": [
+              "star",
+              "watch",
+              "fork"
+          ],
+          "size": "small"
+      },
+      "sharing": {
+          "douban": false,
+          "facebook": false,
+          "google": false,
+          "pocket": false,
+          "qq": true,
+          "qzone": true,
+          "twitter": false,
+          "weibo": true,
+          "all": [
+               "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo", 
+               "messenger","qq", "qzone","viber","whatsapp"
+           ]
       }
     },
     "styles": {
-        "website": "styles/website.css"
+      "mobi": "styles/mobi.css",
+      "website": "styles/website.css"
     },
     "variables": {
       "name": "`SmartSwipe`",

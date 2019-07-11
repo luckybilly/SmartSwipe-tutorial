@@ -12,3 +12,12 @@ SmartSwipe.wrap(view)
 	.addConsumer(new StretchConsumer())
 	.enableVertical();
 ```
+
+
+### 属性列表
+
+继承自 [SwipeConsumer][SwipeConsumer]，[公共属性][公共属性]中的参数设置尽皆有效
+
+
+[公共属性]: /pages/consumers/common_settings.md
+[SwipeConsumer]: /pages/SwipeConsumer.md

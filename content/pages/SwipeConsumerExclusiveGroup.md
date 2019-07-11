@@ -36,5 +36,9 @@ group.markNoCurrent();
 ```java
 group.clear();
 ```
-
+### 锁定其它的consumer
+若当前某个consumer已打开，在关闭它之前，其它{{book.baseName}}无法开启
+```java
+group.setLockOther(true);
+```
 

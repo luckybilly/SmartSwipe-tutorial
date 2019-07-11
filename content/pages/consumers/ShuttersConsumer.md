@@ -54,3 +54,4 @@ setRefreshFrameRate|int|1~60|30|当mRefreshable为true时，设置自动刷新�
 
 [公共属性]: /pages/consumers/common_settings.md
 [SlidingConsumer]: /pages/consumers/SlidingConsumer.md
+[SwipeConsumer]: /pages/SwipeConsumer.md

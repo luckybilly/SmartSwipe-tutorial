@@ -8,7 +8,7 @@
 ### 示例代码
 
 ```java
-SwipeConsumer consumer = SmartSwipe.wrap(view)
+SmartSwipe.wrap(view)
     .addConsumer(new DrawerConsumer())	//抽屉效果
     .setHorizontalDrawerView(buttonsViewGroup) //设置横向(左右两侧)的抽屉为同一个view（常见的侧滑显示删除按钮的功能）
     .setScrimColor(0x2F000000) //设置遮罩的颜色

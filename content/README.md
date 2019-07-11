@@ -1,5 +1,7 @@
-# {{book.name}}
+# 关于{{book.name}}
 ---
+
+一个智能的Android侧滑处理框架，让侧滑变的很简单
 
 {{book.name}}封装了对控件侧滑事件（*上/下/左/右4个方向滑动的手势事件*）的捕获、分发及多点交替滑动的处理，基于{{book.name}}我们可以为控件添加各种你想要的侧滑效果。
 
@@ -63,7 +65,11 @@
 
 {{book.name}}中绝大多少的使用都可以通过链式编程在一行代码内完成，使用Api的设计风格如下：
 ```java
-SmartSwipe.wrap(...).addConsumer(...).enableDirection(...).setXxx(...).addListener(...);
+SmartSwipe.wrap(...) 		//view or Activity
+	.addConsumer(...) 		//添加consumer
+	.enableDirection(...) 	//指定consumer接收哪个方向的侧滑事件
+	.setXxx(...) 			//[可选]一些其它设置项
+	.addListener(...); 		//[可选]给consumer添加监听
 ```
 #### 示例代码：
 ```java
@@ -76,11 +82,19 @@ SmartSwipe.wrap(view)
 
 #### 可以为同一个View添加多个{{book.baseName}}，按照添加的顺序消费侧滑事件。例如：
 ```java
+//注意：
 SmartSwipe.wrap(view)
-	.addConsumer(new StretchConsumer()).enableVertical(); //纵向是仿MIUI的拉伸效果
-	.addConsumer(new SpaceConsumer()).enableHorizontal(); //横向是仿iOS的弹性留白效果
+	.addConsumer(new StretchConsumer())
+	.enableVertical() 					//仿MIUI的拉伸效果的方向为：上下2个方向
+	.addConsumer(new SpaceConsumer())
+	.enableHorizontal() 				//仿iOS弹性留白效果的方向为：左右2个方向
+	;
 ```
 每次侧滑事件（从ACTION_DOWN到ACTION_UP/ACTION_CANCEL的整个过程）被其中一个{{book.baseName}}消费后，将不会继续分发给其它{{book.baseName}}。
+
+点击[这里][SwipeConsumer]你将了解到：
+- 内置的每种{{book.baseName}}的具体用法
+- 创建一个属于你的自定义{{book.baseName}}的方法
 
 #### 全局只需一行代码即可搞定所有Activity侧滑返回(5种样式可选)
 ```java
@@ -141,6 +155,7 @@ Demo中首页使用的点赞自定义View直接引用自第三方开源库：[jd
 
 
 
+[SwipeConsumer]: /pages/SwipeConsumer.md
 [SmartSwipeBack]: /pages/SmartSwipeBack.md
 [SmartSwipeRefresh]: /pages/SmartSwipeRefresh.md
 [SwipeConsumerExclusiveGroup]: /pages/SwipeConsumerExclusiveGroup.md

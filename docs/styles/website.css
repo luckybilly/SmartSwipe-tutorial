@@ -14,3 +14,21 @@
     margin-bottom: 1.275em;
     background: #ddd;
 }
+#QR {
+    padding-top: 0px;
+}
+#rewardButton span {
+    display: inline-block;
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+    font-size: 18px;
+    font-family: "Microsoft Yahei";
+    background: #f44336;
+}
