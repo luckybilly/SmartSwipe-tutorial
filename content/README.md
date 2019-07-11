@@ -27,9 +27,9 @@
 
 ## {{book.name}}的封装思路：
 
-- 用一个ViewGroup将需要处理侧滑事件的控件View包裹起来，这个ViewGroup就是`SmartSwipeWrapper`,被包裹起来的控件作为它的`contentView`
-- 拦截`SmartSwipeWrapper`的touch事件，并将touch事件转换为侧滑距离交给{{book.baseName}}进行消费
-- {{book.baseName}}在消费侧滑事件过程中，对contentView进行重新布局，也可以为`SmartSwipeWrapper`添加一些附属控件View（比如：滑动抽屉）
+- 用一个ViewGroup将需要处理侧滑事件的控件View包裹起来，被包裹起来的控件作为它的`contentView`，可以为这个ViewGroup添加一些附属控件View（如：滑动抽屉）
+- 拦截这个ViewGroup的touch事件，并将touch事件转换为侧滑距离交给{{book.baseName}}进行消费
+- {{book.baseName}}在消费侧滑事件的过程中，对contentView及附属控件的UI呈现（位置、缩放、透明等）进行合理的加工，从而实现各种侧滑的效果。
 
 
 ## 演示
