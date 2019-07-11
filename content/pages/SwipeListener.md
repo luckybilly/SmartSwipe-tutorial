@@ -31,13 +31,13 @@ Tips: 提供了一个空实现类：SimpleSwipeListener， 只需要个别状态
 
 ### 回调顺序
 
-1. 手势打开/关闭((mReleaseMode & SwipeConsumer.RELEASE_MODE_AUTO_OPEN_CLOSE) == RELEASE_MODE_AUTO_CLOSE)
+1. 手势打开/关闭
 ```java
 onSwipeStart
 onSwipeStateChanged (state = 1)
 onSwipeProcess(0个或多个, settling=false)
 onSwipeRelease
-onSwipeOpened(仅在抬起手指时滑动距离已满足open状态，且释放模式为RELEASE_MODE_AUTO_CLOSE时才会回调)
+onSwipeOpened(这个open状态回调需要满足2个条件：抬起手指时滑动距离>=mOpenDistance、释放模式为RELEASE_MODE_AUTO_CLOSE)
 onSwipeStateChanged (state = 2)
 onSwipeProcess(0个或多个, settling=true)
 onSwipeStateChanged (state = 0)
