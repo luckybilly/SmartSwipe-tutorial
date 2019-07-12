@@ -1,40 +1,16 @@
 # 关于{{book.name}}
 ---
 
-一个智能的Android侧滑处理框架，让侧滑变的很简单
+一个智能的Android侧滑处理框架，轻松实现各种侧滑效果
 
-{{book.name}}封装了对控件侧滑事件（*上/下/左/右4个方向滑动的手势事件*）的捕获、分发及多点交替滑动的处理，基于{{book.name}}我们可以为控件添加各种你想要的侧滑效果。
-
-主要实现原理及思想来源于android官方支持库中的ViewDragHelper，在其基础上，将它对子View的捕获及移动处理改成对父View自身触摸事件的定性（能否及是否捕获）、定向（捕获的事件所触发的侧滑方向）及定位（事件捕获之后在侧滑方向上移动的距离），并交由{{book.baseName}}来完成侧滑事件的具体UI呈现效果
-
-{{book.baseName}}实现了侧滑事件处理的公共逻辑，通过继承{{book.baseName}}可以自定义各种丰富的侧滑效果。
-
-另外，{{book.name}}中封装了以下工具类：
+另外，为了便于使用，{{book.name}}中封装了以下工具类：
 
 - [SmartSwipeBack][SmartSwipeBack]: <br/>无需透明主题，无需继承某个特定的Activity，不需要侵入xml布局文件，也不需要侵入BaseActivity，全局只需一行代码即可搞定所有Activity侧滑返回<br/>可选样式：开门、百叶窗、仿微信、仿QQ及仿MIUI贝塞尔曲线
 - [SmartSwipeRefresh][SmartSwipeRefresh]: <br/>一行代码实现下拉刷新和加载更多，支持纵向和横向
 - [SwipeConsumerExclusiveGroup][SwipeConsumerExclusiveGroup]: <br/>管理一组互斥的SwipeConsumer，同时最多只能打开一个，可用在RecyclerView等列表项中使用
 
-## {{book.name}}特性：
-
-- 支持给同一个控件添加多个侧滑效果
-- 支持在View树的不同层级中嵌套使用
-- 支持在ListView及RecyclerView等列表项及列表本身使用
-- 支持NestedScroll（支持support和androidX）
-- 支持通过代码触发侧滑
-- 手势释放时支持多种处理模式
-- 内置十多种自定义{{book.baseName}}侧滑效果（包括百叶窗、开门、滑动抽屉、下拉刷新、侧滑返回、侧滑删除等等）
-
-## {{book.name}}的封装思路：
-
-- 用一个ViewGroup将需要处理侧滑事件的控件View包裹起来，被包裹起来的控件作为它的`contentView`，可以为这个ViewGroup添加一些附属控件View（如：滑动抽屉）
-- 拦截这个ViewGroup的touch事件，并将touch事件转换为侧滑距离交给{{book.baseName}}进行消费
-- {{book.baseName}}在消费侧滑事件的过程中，对contentView及附属控件的UI呈现（位置、缩放、透明等）进行合理的加工，从而实现各种侧滑的效果。
-
 
 ## 演示
-
-#### 常用样式演示
 
 弹性拉伸样式<br/>[StretchConsumer][StretchConsumer]|弹性留白样式<br/>[StayConsumer][StayConsumer]|滑动透明样式<br/>[TranslucentSlidingConsumer][TranslucentSlidingConsumer]
 :---:|:---:|:---:
@@ -44,15 +20,15 @@
 开门样式<br/>[DoorConsumer][DoorConsumer]|百叶窗样式<br/>[ShuttersConsumer][ShuttersConsumer]|
 <img width="200" src="images/doorConsumer.gif">|<img width="200" src="images/shuttersConsumer.gif">|
 
-#### 制作封面
+#### 用于制作封面
 
 开门样式|百叶窗样式|抽屉样式
 :---:|:---:|:---:
 <img width="200" src="images/cover_door.gif">|<img width="200" src="images/cover_shutters.gif">|<img width="200" src="images/cover_drawer.gif">
 
 
-#### Activity侧滑返回
-不侵入Activity继承，无需设置透明主题，轻松搞定Activity侧滑返回
+#### 用于实现Activity侧滑返回
+无需透明主题，无需继承某个特定的Activity，不需要侵入xml布局文件，也不需要侵入BaseActivity，轻松搞定Activity侧滑返回
 
 仿QQ侧滑返回<br/>[StayConsumer][StayConsumer]|仿微信侧滑返回<br/>[ActivitySlidingBackConsumer][ActivitySlidingBackConsumer]|仿MIUI系统侧滑返回<br/>[BezierBackConsumer][BezierBackConsumer]
 :---:|:---:|:---:
@@ -63,7 +39,7 @@
 
 ## 使用方式
 
-{{book.name}}中绝大多少的使用都可以通过链式编程在一行代码内完成，使用Api的设计风格如下：
+{{book.name}}中绝大多少的使用都可以通过链式编程在一行代码内完成，API的设计风格如下：
 ```java
 SmartSwipe.wrap(...) 		//view or Activity
 	.addConsumer(...) 		//添加consumer
@@ -82,15 +58,14 @@ SmartSwipe.wrap(view)
 
 #### 可以为同一个View添加多个{{book.baseName}}，按照添加的顺序消费侧滑事件。例如：
 ```java
-//注意：
 SmartSwipe.wrap(view)
 	.addConsumer(new StretchConsumer())
-	.enableVertical() 					//仿MIUI的拉伸效果的方向为：上下2个方向
+	.enableVertical() 					//仿MIUI拉伸效果的方向为：上下2个方向
 	.addConsumer(new SpaceConsumer())
 	.enableHorizontal() 				//仿iOS弹性留白效果的方向为：左右2个方向
 	;
 ```
-每次侧滑事件（从ACTION_DOWN到ACTION_UP/ACTION_CANCEL的整个过程）被其中一个{{book.baseName}}消费后，将不会继续分发给其它{{book.baseName}}。
+每次侧滑，从开始到结束，只有被1个{{book.baseName}}全程消费，谁先捕获到本次侧滑，则接下来的侧滑距离都交给它来消费。
 
 点击[这里][SwipeConsumer]你将了解到：
 - 内置的每种{{book.baseName}}的具体用法
@@ -98,29 +73,55 @@ SmartSwipe.wrap(view)
 
 #### 全局只需一行代码即可搞定所有Activity侧滑返回(5种样式可选)
 ```java
-//仿小米MIUI系统的贝塞尔曲线返回效果
-SmartSwipeBack.activityBezierBack(application, null);
-
-//仿手机QQ的手势滑动返回
-SmartSwipeBack.activityStayBack(application, null);
-
-//仿微信带联动效果的透明侧滑返回
-SmartSwipeBack.activitySlidingBack(application, null);
-
-//侧滑开门样式关闭activity
-SmartSwipeBack.activityDoorBack(application, null);
-
-//侧滑百叶窗样式关闭activity
-SmartSwipeBack.activityShuttersBack(application, null);
+SmartSwipeBack.activityBezierBack(application, null);	//仿小米MIUI系统的贝塞尔曲线返回效果
+SmartSwipeBack.activityStayBack(application, null);		//仿手机QQ的手势滑动返回
+SmartSwipeBack.activitySlidingBack(application, null);	//仿微信带联动效果的透明侧滑返回
+SmartSwipeBack.activityDoorBack(application, null);		//侧滑开门样式关闭activity
+SmartSwipeBack.activityShuttersBack(application, null);	//侧滑百叶窗样式关闭activity
 ```
 详细内容及注意事项请看这里：[全局侧滑返回][SmartSwipeBack]
+
+### 一行代码给View添加下拉刷新功能
+```java
+//xxxMode第二个参数为false，表示工作方向为纵向：下拉刷新&上拉加载更多
+//如果第二个参数设置为true，则表示工作方向为横向：右拉刷新&左拉加载更多
+SmartSwipeRefresh.drawerMode(view, false).setDataLoader(loader);
+SmartSwipeRefresh.behindMode(view, false).setDataLoader(loader);
+SmartSwipeRefresh.scaleMode(view, false).setDataLoader(loader);
+SmartSwipeRefresh.translateMode(view, false).setDataLoader(loader);
+```
+更多关于下拉刷新功能的介绍请查看[下拉刷新][SmartSwipeRefresh]
+
+
+## {{book.name}}特性：
+
+- 支持给同一个控件添加多个侧滑效果
+- 支持在View树的不同层级中嵌套使用
+- 支持在ListView及RecyclerView等列表项及列表本身使用
+- 支持NestedScroll（支持support和androidX）
+- 支持通过代码触发侧滑
+- 手势释放时支持多种处理模式
+- 内置十多种{{book.baseName}}侧滑效果（包括百叶窗、开门、滑动抽屉、下拉刷新、侧滑返回、侧滑删除等等）
+
+
+{{book.name}}封装了对控件侧滑事件（*上/下/左/右4个方向滑动的手势事件*）的捕获、分发及多点交替滑动的处理，基于{{book.name}}我们可以为控件添加各种你想要的侧滑效果。
+
+主要实现原理及思想来源于android官方支持库中的[ViewDragHelper][ViewDragHelper]，在其基础上，将它对子View的捕获及移动处理改成对父View自身触摸事件的定性（能否及是否捕获）、定向（捕获的事件所触发的侧滑方向）及定位（事件捕获之后在侧滑方向上移动的距离），并交由{{book.baseName}}来完成侧滑事件的具体UI呈现效果
+
+{{book.baseName}}类实现了侧滑事件处理的公共逻辑，通过继承{{book.baseName}}可以自定义各种丰富的侧滑效果。
+
+
+## {{book.name}}的封装思路：
+
+- 用一个ViewGroup将需要处理侧滑事件的控件View包裹起来，被包裹起来的控件作为它的`contentView`，可以为这个ViewGroup添加一些附属控件View（如：滑动抽屉）
+- 拦截这个ViewGroup的touch事件，并将touch事件转换为侧滑距离交给{{book.baseName}}进行消费
+- {{book.baseName}}在消费侧滑事件的过程中，对contentView及附属控件的UI呈现（位置、缩放、透明等）进行合理的加工，从而实现各种侧滑的效果。
+
 
 
 ## 鸣谢
 
-主要实现原理及思想来源于android官方支持库中的[ViewDragHelper](https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-master-dev/customview/src/main/java/androidx/customview/widget/ViewDragHelper.java)
-
-实现侧滑返回功能时Activity透明的方案参考了:
+实现侧滑返回功能Activity透明的方案参考了:
 
 - [Android侧滑返回分析和实现（不高仿微信）](https://www.jianshu.com/p/26fac8d30058?from=groupmessage) 源码：[SwipeBackHelper](https://github.com/Simon-Leeeeeeeee/SLWidget/blob/master/swipeback/src/main/java/cn/simonlee/widget/swipeback/SwipeBackHelper.java)
 - [ikew0ng/SwipeBackLayout](https://github.com/ikew0ng/SwipeBackLayout)
@@ -154,7 +155,7 @@ Demo中首页使用的点赞自定义View直接引用自第三方开源库：[jd
 
 
 
-
+[ViewDragHelper]: https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-master-dev/customview/src/main/java/androidx/customview/widget/ViewDragHelper.java
 [SwipeConsumer]: /pages/SwipeConsumer.md
 [SmartSwipeBack]: /pages/SmartSwipeBack.md
 [SmartSwipeRefresh]: /pages/SmartSwipeRefresh.md
