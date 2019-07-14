@@ -1,6 +1,17 @@
 # 关于{{book.name}}
 ---
 
+
+![](https://img.shields.io/badge/aarSize-100KB-blue.svg)
+![](https://img.shields.io/badge/minSDK-14-orange.svg)
+![](https://img.shields.io/badge/license-Apache--2.0-blue.svg)
+
+
+库|smart-swipe|smart-swipe-x|smart-swipe-support
+:---:|:---:|:---:|:---:
+最新版| [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe/_latestVersion)| [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe-x/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe-x/_latestVersion)| [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe-support/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe-support/_latestVersion)
+
+
 一个智能的Android侧滑处理框架，轻松实现各种侧滑效果
 
 另外，为了便于使用，{{book.name}}中封装了以下工具类：
@@ -39,7 +50,33 @@
 
 ## 使用方式
 
+首先，添加 `SmartSwipe` 依赖到项目中
+
+```groovy
+compile 'com.billy.android:smart-swipe:latestVersion'
+```
+由于主库未添加任何支持库，仅在android api >= 21(android 5.0以上)时才支持嵌套滑动效果(NestedScrolling)。
+
+如需兼容5.0以下版本嵌套滑动，分别按照如下2种方式来兼容androidX或android support库：
+
+```groovy
+compile 'com.billy.android:smart-swipe:latestVersion'
+//android x环境下兼容NestedScrolling
+compile 'com.billy.android:smart-swipe-x:latestVersion'
+```
+
+或
+
+```groovy
+compile 'com.billy.android:smart-swipe:latestVersion'
+//android support library环境下兼容NestedScrolling
+compile 'com.billy.android:smart-swipe-support:latestVersion'
+```
+
+#### 开始使用
+
 {{book.name}}中绝大多少的使用都可以通过链式编程在一行代码内完成，API的设计风格如下：
+
 ```java
 SmartSwipe.wrap(...) 		//view or Activity
 	.addConsumer(...) 		//添加consumer
@@ -117,7 +154,6 @@ SmartSwipeRefresh.translateMode(view, false).setDataLoader(loader);
 - 用一个ViewGroup将需要处理侧滑事件的控件View包裹起来，被包裹起来的控件作为它的`contentView`，可以为这个ViewGroup添加一些附属控件View（如：滑动抽屉）
 - 拦截这个ViewGroup的touch事件，并将touch事件转换为侧滑距离交给{{book.baseName}}进行消费
 - {{book.baseName}}在消费侧滑事件的过程中，对contentView及附属控件的UI呈现（位置、缩放、透明等）进行合理的加工，从而实现各种侧滑的效果。
-
 
 
 ## 鸣谢
