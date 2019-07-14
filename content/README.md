@@ -12,7 +12,7 @@
 
 ## 演示
 
-弹性拉伸样式<br/>[StretchConsumer][StretchConsumer]|弹性留白样式<br/>[StayConsumer][StayConsumer]|滑动透明样式<br/>[TranslucentSlidingConsumer][TranslucentSlidingConsumer]
+弹性拉伸样式<br/>[StretchConsumer][StretchConsumer]|弹性留白样式<br/>[SpaceConsumer][SpaceConsumer]|滑动透明样式<br/>[TranslucentSlidingConsumer][TranslucentSlidingConsumer]
 :---:|:---:|:---:
 <img width="200" src="images/stretchConsumer.gif">|<img width="200" src="images/spaceConsumer.gif">|<img width="200" src="images/translucentSlidingConsumer.gif">
 在上层显示的滑动抽屉<br/>[DrawerConsumer][DrawerConsumer]|在下层显示的滑动抽屉<br/>(可设置联动系数)<br/>[SlidingConsumer][SlidingConsumer]|
@@ -95,12 +95,13 @@ SmartSwipeRefresh.translateMode(view, false).setDataLoader(loader);
 
 ## {{book.name}}特性：
 
+- 支持上下左右4个方向侧滑
+- 支持边缘触发侧滑也支持整个View(或整个Activity)区域内触发侧滑
 - 支持给同一个控件添加多个侧滑效果
 - 支持在View树的不同层级中嵌套使用
 - 支持在ListView及RecyclerView等列表项及列表本身使用
 - 支持NestedScroll（支持support和androidX）
 - 支持通过代码触发侧滑
-- 手势释放时支持多种处理模式
 - 内置十多种{{book.baseName}}侧滑效果（包括百叶窗、开门、滑动抽屉、下拉刷新、侧滑返回、侧滑删除等等）
 
 

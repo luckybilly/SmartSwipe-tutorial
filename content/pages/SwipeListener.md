@@ -24,10 +24,9 @@ public interface SwipeListener {
 }
 ```
 
-~~~
-Tips: 提供了一个空实现类：SimpleSwipeListener， 只需要个别状态回调时可继承此类，从而使得代码更简洁
-~~~
-
+> **Tips**
+>
+> {{book.name}}为SwipeListener接口提供了一个空实现类：SimpleSwipeListener， 只需要个别状态回调时可继承此类，从而使得代码更简洁
 
 ### 回调顺序
 

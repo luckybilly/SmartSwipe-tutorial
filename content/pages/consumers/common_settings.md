@@ -80,6 +80,7 @@ mSwipeHelper|SwipeHelper|getSwipeHelper()|-|为当前consumer捕获触发侧滑�
 -|int|getDragState()|SwipeHelper.STATE_IDLE<br/>SwipeHelper.STATE_DRAGGING<br/>SwipeHelper.STATE_SETTLING<br/>SwipeHelper.STATE_NONE_TOUCH|获取当前consumer的侧滑状态
 mProgress|float|getProgress()|0 ~ 1 + mOverSwipeFactor|当前侧滑的进度，0为关闭状态，1为打开状态
 mDirection|int|getDirection()|0/1/2/4/8|当前侧滑的方向，只会是：无、左、右、上、下这5个值中的一种
+mSwiping|boolean|isSwiping()|true/false|当前状态是否为：正在侧滑
 
 ### 7. 子类中可以使用的属性（不要修改）
 

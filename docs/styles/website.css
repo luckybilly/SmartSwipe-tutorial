@@ -6,6 +6,9 @@
   max-width: 1000px;    
   padding: 2px 2px 2px 2px;
 }
+.markdown-section hr {
+    height: 1px;
+}
 .markdown-section pre {
     overflow: auto;
     word-wrap: normal;
@@ -18,17 +21,8 @@
     padding-top: 0px;
 }
 #rewardButton span {
-    display: inline-block;
     width: 180px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: 400;
-    font-style: normal;
-    font-variant: normal;
-    font-stretch: normal;
-    font-size: 18px;
-    font-family: "Microsoft Yahei";
-    background: #f44336;
+}
+.gitbook-donate {
+    margin: 20px auto 50px;
 }
