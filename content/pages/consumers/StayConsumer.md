@@ -2,7 +2,7 @@
 ---
 
 
-主体contentView侧滑过程中保持不动，侧滑结束时按照手势滑动的方向和速率来确定是否开启，若开启将回调[SwipeListener][SwipeListener]的`onSwipeOpen`方法
+主体contentView在侧滑过程中保持不动，侧滑结束时按照手势滑动的方向和速率来确定是否开启，若开启将回调[SwipeListener][SwipeListener]的`onSwipeOpen`方法
 
 可以用来实现侧滑返回
 

@@ -53,24 +53,24 @@
 首先，添加 `SmartSwipe` 依赖到项目中
 
 ```groovy
-compile 'com.billy.android:smart-swipe:latestVersion'
+implementation 'com.billy.android:smart-swipe:latestVersion'
 ```
 由于主库未添加任何支持库，仅在android api >= 21(android 5.0以上)时才支持嵌套滑动效果(NestedScrolling)。
 
 如需兼容5.0以下版本嵌套滑动，分别按照如下2种方式来兼容androidX或android support库：
 
 ```groovy
-compile 'com.billy.android:smart-swipe:latestVersion'
+implementation 'com.billy.android:smart-swipe:latestVersion'
 //android x环境下兼容NestedScrolling
-compile 'com.billy.android:smart-swipe-x:latestVersion'
+implementation 'com.billy.android:smart-swipe-x:latestVersion'
 ```
 
 或
 
 ```groovy
-compile 'com.billy.android:smart-swipe:latestVersion'
+implementation 'com.billy.android:smart-swipe:latestVersion'
 //android support library环境下兼容NestedScrolling
-compile 'com.billy.android:smart-swipe-support:latestVersion'
+implementation 'com.billy.android:smart-swipe-support:latestVersion'
 ```
 
 #### 开始使用
