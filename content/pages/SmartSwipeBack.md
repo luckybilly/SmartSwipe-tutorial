@@ -9,7 +9,7 @@
 
 - application: Application对象，用于注册全局activity生命周期监听
 - edgeSize：边缘触发区域尺寸像素值（dp需转换为px），若设置为0，则表示整个activity区域都可触发
-- direction：触发方位，可设置为上下左右中的一个或多个，其取值可参考[侧滑方向](/pages/directions.md)，若为0，则永远不会触发侧滑
+- direction：开启侧滑的方向，可设置为上下左右中的一个或多个，其取值可参考[侧滑方向](/pages/directions.md)，为0则不会触发侧滑
 - filter: Activity过滤器，用于过滤确定对哪些activity进行侧滑返回的封装，若为null，则不过滤，对所有activity都执行侧滑返回的封装
 
 Activity过滤器接口定义如下：
@@ -108,9 +108,9 @@ SmartSwipeBack.activityBezierBack(this, activitySwipeBackFilter);
 
 - 开门式侧滑返回
 
-支持的最低api等级为21，即android 5.0
-
-不支持含有SurfaceView/GLSurfaceView/TextureView/VideoView等控件的页面（将会在这些view的区域显示透明），如果app内有页面含有这些控件，需要在ActivitySwipeBackFilter中将其过滤
+> 支持的最低api等级为21，即android 5.0 [如何兼容5.0以下版本？](#兼容50以下系统版本)
+>
+> 不支持含有SurfaceView/GLSurfaceView/TextureView/VideoView等控件的页面（将会在这些view的区域显示透明），如果app内有页面含有这些控件，需要在ActivitySwipeBackFilter中将其过滤
 
 <div align=center><img src="/images/activityDoorBackConsumer.gif"><br/><br/></div>
 
@@ -130,9 +130,9 @@ SmartSwipeBack.activityDoorBack(this, activitySwipeBackFilter);
 
 - 百叶窗式侧滑返回
 
-支持的最低api等级为21，即android 5.0
-
-不支持含有SurfaceView/GLSurfaceView/TextureView/VideoView等控件的页面（将会在这些view的区域显示透明），如果app内有页面含有这些控件，需要在ActivitySwipeBackFilter中将其过滤
+> 支持的最低api等级为21，即android 5.0 [如何兼容5.0以下版本？](#兼容50以下系统版本)
+> 
+> 不支持含有SurfaceView/GLSurfaceView/TextureView/VideoView等控件的页面（将会在这些view的区域显示透明），如果app内有页面含有这些控件，需要在ActivitySwipeBackFilter中将其过滤
 
 <div align=center><img src="/images/activityShuttersBackConsumer.gif"><br/><br/></div>
 

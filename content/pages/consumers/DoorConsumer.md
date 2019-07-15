@@ -37,7 +37,7 @@ SmartSwipe.wrap(view)
 
 ### 属性设置
 
-继承自 [ShuttersConsumer][ShuttersConsumer]，固定叶子数为2个，叶子数量设置无效外，其它参数的设置与之相同
+继承自 [ShuttersConsumer][ShuttersConsumer]，固定叶子数为2个，除了叶子数量设置无效外，其它参数的设置与之相同
 
 
 
