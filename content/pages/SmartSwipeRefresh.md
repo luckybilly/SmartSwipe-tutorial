@@ -262,11 +262,15 @@ SmartSwipeRefresh.setDefaultRefreshViewCreator(new SmartSwipeRefreshViewCreator(
 });
 ```
 
-在`smart-swipe-refresh-ext`扩展包中, 将提供一些对炫酷的第三方header和footer效果的封装，最新版本： [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe-refresh-ext/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe-refresh-ext/_latestVersion))
+### 扩展包：smart-swipe-refresh-ext
+
+在`smart-swipe-refresh-ext`扩展包中, 将提供一些对炫酷的第三方header和footer效果的封装
+
+当前最新版本： [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe-refresh-ext/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe-refresh-ext/_latestVersion)
 
 其中包含：
 
-[Ifxcyr/ArrowDrawable](https://github.com/Ifxcyr/ArrowDrawable)|更多...
+[ArrowHeader](https://github.com/luckybilly/SmartSwipe/blob/master/smart-swipe-refresh-ext/src/main/java/com/billy/android/swipe/ext/refresh/ArrowHeader.java)<br/>Based on [Ifxcyr/ArrowDrawable](https://github.com/Ifxcyr/ArrowDrawable)|更多...
 :---:|:--:
 <img width="200" src="/images/refresh_arrow.gif">|[期待你来添加](https://github.com/luckybilly/SmartSwipe/pulls)
 
