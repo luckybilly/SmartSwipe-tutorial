@@ -136,7 +136,7 @@ SmartSwipeRefresh.behindMode(view, false).setDataLoader(loader);
 SmartSwipeRefresh.scaleMode(view, false).setDataLoader(loader);
 SmartSwipeRefresh.translateMode(view, false).setDataLoader(loader);
 ```
-更多关于下拉刷新功能的介绍请查看[下拉刷新][SmartSwipeRefresh]
+更多关于下拉刷新功能的介绍请查看[下拉刷新][SmartSwipeRefresh], 关于自定义刷新控件请点击[这里][SmartSwipeRefresh-ext]
 
 
 ## {{book.name}}特性：
@@ -191,7 +191,7 @@ Demo中封面使用的下雪效果自定义View拷贝并修改自：[AnliaLee/Fa
 
 Demo中首页使用的点赞自定义View直接引用自第三方开源库：[jd-alexander/LikeButton](https://github.com/jd-alexander/LikeButton)
 
-扩展包(smart-swipe-refresh-ext)中的ArrowHeader使用了第三方开源库： [Ifxcyr/ArrowDrawable](https://github.com/Ifxcyr/ArrowDrawable)
+扩展包(smart-swipe-refresh-ext)中的[ArrowHeader](https://github.com/luckybilly/SmartSwipe/blob/master/smart-swipe-refresh-ext/src/main/java/com/billy/android/swipe/ext/refresh/ArrowHeader.java)使用了第三方开源库： [Ifxcyr/ArrowDrawable](https://github.com/Ifxcyr/ArrowDrawable)
 
 
 
@@ -205,6 +205,7 @@ Demo中首页使用的点赞自定义View直接引用自第三方开源库：[jd
 [SwipeConsumer]: /pages/SwipeConsumer.md
 [SmartSwipeBack]: /pages/SmartSwipeBack.md
 [SmartSwipeRefresh]: /pages/SmartSwipeRefresh.md
+[SmartSwipeRefresh-ext]: /pages/SmartSwipeRefresh.md#扩展包：smart-swipe-refresh-ext
 [SwipeConsumerExclusiveGroup]: /pages/SwipeConsumerExclusiveGroup.md
 
 [ActivityDoorBackConsumer]: /pages/consumers/ActivityDoorBackConsumer.md
