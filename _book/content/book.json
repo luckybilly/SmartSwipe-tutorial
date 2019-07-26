@@ -1,0 +1,90 @@
+{
+    "title" : "Smart Swipe",
+    "author" : "齐翊",
+    "language" : "zh-hans",
+    "links": {
+      "sidebar": {
+        "我的博客": "https://qibilly.com"
+      }
+    },
+    "plugins":[
+      "-lunr",
+      "-sharing",
+      "-search",
+      "search-pro",
+      "chapter-fold",
+      "splitter",
+      "tbfed-pagefooter",
+      "copy-code-button",
+      "donate",
+      "prism",
+      "todo",
+      "anchors",
+      "github-buttons", 
+      "sharing-plus",
+      "alerts",
+      "flexible-alerts",
+      "pageview-count",
+      "auto-scroll-table",
+      "lightbox",
+      "back-to-top-button"
+    ],
+    "pluginsConfig":{
+      "tbfed-pagefooter": {
+        "copyright": "Copyright &copy qibilly.com 2019",
+        "modify_label": "最后修改时间：",
+        "modify_format": "YYYY-MM-DD HH:mm:ss"
+      },
+      "donate": {
+          "wechat": "https://github.com/luckybilly/CC/raw/master/image/shoukuan_wechat.png",
+          "alipay": "https://github.com/luckybilly/CC/raw/master/image/shoukuan_alipay.png",
+          "title": "",
+          "button": "我请作者喝咖啡",
+          "alipayText": "支付宝",
+          "wechatText": "微信"
+      },
+      "theme-default": {
+          "showLevel": true
+      },
+      "github-buttons": {
+          "repo": "luckybilly/SmartSwipe-tutorial",
+          "types": [
+              "star",
+              "watch",
+              "fork"
+          ],
+          "size": "small"
+      },
+      "sharing": {
+          "douban": false,
+          "facebook": false,
+          "google": false,
+          "pocket": false,
+          "qq": true,
+          "qzone": true,
+          "twitter": false,
+          "weibo": true,
+          "all": [
+               "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo", 
+               "messenger","qq", "qzone","viber","whatsapp"
+           ]
+      },
+      "flexible-alerts": {
+        "style": "callout",
+        "comment": {
+          "label": "Comment",
+          "icon": "fa fa-comments",
+          "className": "info"
+        }
+      }
+    },
+    "styles": {
+      "mobi": "styles/mobi.css",
+      "website": "styles/website.css"
+    },
+    "variables": {
+      "name": "`SmartSwipe`",
+      "baseName": "`SwipeConsumer`"
+    }
+
+}

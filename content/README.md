@@ -1,6 +1,7 @@
 # 关于{{book.name}}
 ---
 
+**侧滑就选智能侧滑，弹性侧滑、滑动抽屉、下拉刷新、侧滑返回以及侧滑删除等你想到和没想到的，通通搞定。**
 
 ![](https://img.shields.io/badge/aarSize-100KB-blue.svg)
 ![](https://img.shields.io/badge/minSDK-14-orange.svg)
@@ -11,13 +12,21 @@
 :---:|:---:|:---:|:---:
 最新版| [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe/_latestVersion)| [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe-x/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe-x/_latestVersion)| [![Download](https://api.bintray.com/packages/hellobilly/android/smart-swipe-support/images/download.svg)](https://bintray.com/hellobilly/android/smart-swipe-support/_latestVersion)
 
+为了便于使用，{{book.name}}中还封装了以下工具类：
 
-一个智能的Android侧滑处理框架，轻松实现各种侧滑效果
-
-另外，为了便于使用，{{book.name}}中封装了以下工具类：
-
-- [SmartSwipeBack][SmartSwipeBack]: <br/>无需透明主题，无需继承某个特定的Activity，不需要侵入xml布局文件，也不需要侵入BaseActivity，全局只需一行代码即可搞定所有Activity侧滑返回<br/>可选样式：开门、百叶窗、仿微信、仿QQ及仿MIUI贝塞尔曲线
-- [SmartSwipeRefresh][SmartSwipeRefresh]: <br/>一行代码实现下拉刷新和加载更多，支持纵向和横向
+- [SmartSwipeBack][SmartSwipeBack]: 
+	- 全局只需一行代码即可搞定所有Activity侧滑返回
+	- 可选样式：开门、百叶窗、仿微信、仿QQ及仿MIUI贝塞尔曲线
+	- 无需透明主题
+	- 无需继承某个特定的Activity
+	- 不需要侵入xml布局文件
+	- 也不需要侵入BaseActivity
+	- 支持全屏侧滑和(/或)边缘侧滑返回
+	- 支持 上/下/左/右 4个方向侧滑返回
+- [SmartSwipeRefresh][SmartSwipeRefresh]:
+	- 一行代码实现下拉刷新和加载更多
+	- 支持纵向和横向
+	- 支持自定义刷新控件（跟[scwang90/SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)的自定义刷新控件一样简单，但比它更轻量级）
 - [SwipeConsumerExclusiveGroup][SwipeConsumerExclusiveGroup]: <br/>管理一组互斥的SwipeConsumer，同时最多只能打开一个，可用在RecyclerView等列表项中使用
 
 
@@ -182,7 +191,7 @@ Demo中封面使用的下雪效果自定义View拷贝并修改自：[AnliaLee/Fa
 
 Demo中首页使用的点赞自定义View直接引用自第三方开源库：[jd-alexander/LikeButton](https://github.com/jd-alexander/LikeButton)
 
-
+扩展包(smart-swipe-refresh-ext)中的ArrowHeader使用了第三方开源库： [Ifxcyr/ArrowDrawable](https://github.com/Ifxcyr/ArrowDrawable)
 
 
 
