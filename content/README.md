@@ -84,7 +84,7 @@ implementation 'com.billy.android:smart-swipe-support:latestVersion'
 
 #### 开始使用
 
-{{book.name}}中绝大多少的使用都可以通过链式编程在一行代码内完成，API的设计风格如下：
+{{book.name}}中绝大多数的使用都可以通过链式编程在一行代码内完成，API的设计风格如下：
 
 ```java
 SmartSwipe.wrap(...) 		//view or Activity
@@ -153,7 +153,7 @@ SmartSwipeRefresh.translateMode(view, false).setDataLoader(loader);
 
 {{book.name}}封装了对控件侧滑事件（*上/下/左/右4个方向滑动的手势事件*）的捕获、分发及多点交替滑动的处理，基于{{book.name}}我们可以为控件添加各种你想要的侧滑效果。
 
-主要实现原理及思想来源于android官方支持库中的[ViewDragHelper][ViewDragHelper]，在其基础上，将它对子View的捕获及移动处理改成对父View自身触摸事件的定性（能否及是否捕获）、定向（捕获的事件所触发的侧滑方向）及定位（事件捕获之后在侧滑方向上移动的距离），并交由{{book.baseName}}来完成侧滑事件的具体UI呈现效果
+主要实现原理及思想来源于android官方支持库中的[ViewDragHelper][ViewDragHelper]，在其基础上，将它对子View的捕获及移动处理改成对父View自身触摸事件的定性（能否及是否捕获）、定向（捕获的事件所触发的侧滑方向）及定量（事件捕获之后在侧滑方向上移动的距离），并交由{{book.baseName}}来完成侧滑事件的具体UI呈现效果
 
 {{book.baseName}}类实现了侧滑事件处理的公共逻辑，通过继承{{book.baseName}}可以自定义各种丰富的侧滑效果。
 
