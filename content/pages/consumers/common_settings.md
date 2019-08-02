@@ -65,6 +65,7 @@ mDisableNestedFly|boolean|true/false|false|true表示禁用惯性滑动时的Nes
 
 变量名称|类型|取值范围|默认值|备注
 :---:|:---|:---:|:---:|:---
+mMaxSettleDuration|int|0~♾|600|单位：ms<br/>手指释放后的动画最大持续时长
 mInterpolator|Interpolator|-|SwipeHelper.sInterpolator|非手势事件拖动时动画侧滑的插值器
 mReleaseMode|int|0~7|1|释放模式决定了在用户拖动触发侧滑后抬起手指时的处理策略<br/>参考：[Release处理方式][Release处理方式]
 mTag|Object|所有值|null|如果有需要，可以为consumer设置一个标签
