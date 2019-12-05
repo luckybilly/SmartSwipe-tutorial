@@ -3,9 +3,14 @@
 
 仿微信侧滑返回效果
 
-专为完成Activity的侧滑而做的一种效果，支持与前一个Activity的联动效果
+专为完成Activity的侧滑而做的一种效果，支持与前一个Activity的联动效果 
 
-如下图所示：
+> 建议使用封装后的工具类[SmartSwipeBack][SmartSwipeBack]，更舒适
+> 
+> issue中相关的说明：[#28](https://github.com/luckybilly/SmartSwipe/issues/28#issuecomment-520708861)
+
+
+效果图如下所示：
 
 
 <div align=center><img src="/images/activitySlidingBackConsumer.gif"><br/><br/></div>

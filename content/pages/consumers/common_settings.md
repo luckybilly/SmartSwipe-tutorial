@@ -14,6 +14,15 @@
 mEnableDirection|int|0~15|0|enableDirection(dir)<br/>enableLeft()<br/>enableRight()<br/>enableTop()<br/>enableBottom()<br/>enableHorizontal()<br/>enableVertical()<br/>enableAllDirections()<br/><br/>disableDirection(dir)<br/>disableLeft()<br/>disableRight()<br/>disableTop()<br/>disableBottom()<br/>disableHorizontal()<br/>disableVertical()<br/>disableAllDirections()<br/>|isDirectionEnable(dir)<br/>isLeftEnable()<br/>isRightEnable()<br/>isTopEnable()<br/>isBottomEnable()<br/>isHorizontalEnable()<br/>isVerticalEnable()<br/>isAllDirectionsEnable()<br/>|表示可侧滑的方向<br/>若disable的方向包含当前侧滑的方向，则会自动close重置。<br/>参考：[侧滑方向][侧滑方向]
 mLockDirection|int|0~15|0|lockDirection(dir)<br/>lockLeft()<br/>lockRight()<br/>lockTop()<br/>lockBottom()<br/>lockHorizontal()<br/>lockVertical()<br/>lockAllDirections()<br/><br/>unlockDirection(dir)<br/>unlockLeft()<br/>unlockRight()<br/>unlockTop()<br/>unlockBottom()<br/>unlockHorizontal()<br/>unlockVertical()<br/>unlockAllDirections()<br/>|isDirectionLocked(dir)<br/>isLeftLocked()<br/>isRightLocked()<br/>isTopLocked()<br/>isBottomLocked()<br/>isHorizontalLocked()<br/>isVerticalLocked()<br/>isAllDirectionsLocked()<br/>|表示锁定的方向<br/>被锁定的方向即使enable为true也不可被手势事件触发侧滑，但可通过代码执行侧滑事件。<br/>参考：[侧滑方向][侧滑方向]
 
+#### 1.1.0版本新增:
+
+支持设置指定方向是否启用嵌套滑动及飞行（惯性滑动），**需配合`smart-swipe-support`或`smart-swipe-x` 1.1.0及以上版本使用**
+
+set方法|get方法|备注
+:---|:---|:---
+enableNestedScrollLeft(enable)<br/>enableNestedScrollRight(enable)<br/>enableNestedScrollTop(enable)<br/>enableNestedScrollBottom(enable)<br/>enableNestedScrollHorizontal(enable)<br/>enableNestedScrollVertical(enable)<br/>enableNestedScrollAllDirections(enable)<br/>enableNestedScroll(enable)<br/>|isNestedScrollEnable(direction)|启用/禁用嵌套滑动<br/>(默认所有方向全部启用)<br/>
+enableNestedFlyLeft(enable)<br/>enableNestedFlyRight(enable)<br/>enableNestedFlyTop(enable)<br/>enableNestedFlyBottom(enable)<br/>enableNestedFlyHorizontal(enable)<br/>enableNestedFlyVertical(enable)<br/>enableNestedFlyAllDirections(enable)<br/>enableNestedFly(enable)|isNestedFlyEnable(direction)|启用/禁用嵌套飞行（惯性滑动）<br/>(默认所有方向全部启用)<br/>
+
 
 ### 2. 宽高
 
