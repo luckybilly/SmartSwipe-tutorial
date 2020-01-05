@@ -40,7 +40,7 @@ setAllDirectionDrawerView|View view|将View设置为上下左右4侧抽屉，并
     android:background="@drawable/menu_item_bg"
 	>
 	<!-- 左右两侧的抽屉 -->
-    <LinearLayout app:layout_gravity="right|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout app:swipe_gravity="right|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
         <com.like.LikeButton
                 app:icon_type="heart"
                 app:icon_size="25dp"
@@ -64,24 +64,26 @@ setAllDirectionDrawerView|View view|将View设置为上下左右4侧抽屉，并
     <com.like.LikeButton
             app:icon_type="heart"
             app:icon_size="25dp"
-            app:layout_gravity="top"
+            app:swipe_gravity="top"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" android:background="#15BABA"/>
     <!-- 下侧抽屉 -->
     <com.like.LikeButton
             app:icon_type="Thumb"
             app:icon_size="25dp"
-            app:layout_gravity="bottom"
+            app:swipe_gravity="bottom"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" android:background="#CBECCC"/>
 </com.billy.android.swipe.SmartSwipeWrapper>
 ```
 注意：
-- SmartSwipeWrapper的子view中，第1个不含`app:layout_gravity`属性的控件作为被wrap的主体contentView
-- 其它view需要设置`app:layout_gravity`才有效
-	- `app:layout_gravity="top"`表示作为上侧抽屉
-	- `app:layout_gravity="right|left"`表示作为上下两侧的抽屉
+- SmartSwipeWrapper的子view中，第1个不含`app:swipe_gravity`属性的控件作为被wrap的主体contentView
+- 其它view需要设置`app:swipe_gravity`才有效
+	- `app:swipe_gravity="top"`表示作为上侧抽屉
+	- `app:swipe_gravity="right|left"`表示作为上下两侧的抽屉
 	- 其它设置方式同理可知
+- 最后，别忘了通过`findViewById(R.id.main_ui_wrap_view).addConsumer(xxx)`设置consumer
+    - 支持`DrawerConsumer`、`SlidingConsumer`
 
 ### 属性列表
 
